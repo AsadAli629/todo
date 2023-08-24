@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    /* word-spacing: 3px; */
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: white;
+    margin-bottom: 5px;
+    -webkit-box-sizing: 1px;
+}
+
+h1 {
+    color: orange;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    position: fixed;
+}
+
+h2 {
+    color: orange;
+    position: absolute;
+    top: 90%;
+}
+
+.container {
+    height: 450px;
+    width: 330px;
+    background-color: black;
+    box-shadow: 7px 5px 5px rgb(204, 201, 201);
+    border: 3px solid rgb(255, 149, 0);
+    ;
+    border-radius: 5%;
+    overflow-y: auto;
+}
+
+#input {
+    background-color: rgb(255, 149, 0);
+    ;
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 6px;
+    color: white;
+    height: 50px;
+    width: 90%;
+    margin: 10px;
+}
+
+#input::placeholder {
+    color: black;
+}
+
+ul li {
+
+    padding-left: 5px;
+    margin: 5px;
+    border: 2px solid rgb(255, 149, 0);
+    ;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 2px 2px 2px rgb(255, 149, 0);
+    position: relative;
+    list-style: none;
+    color: white;
+    padding: 6px;
+}
+
+.fa-check {
+    color: orange;
+    position: absolute;
+    right: auto;
+    top: auto;
+    margin-left: 30px;
+}
+
+.fa-trash {
+    color: red;
+    position: absolute;
+    right: auto;
+    top: auto;
+    margin-left: 70px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: black;
+    background-color: orange;
+}

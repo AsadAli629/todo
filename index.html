@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <h1>DAILY TASK REMINDER</h1>
+
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="input" placeholder="press enter to add task">
+        <ul></ul>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#input').change(function () {
+                var input = $(this).val();
+                $('ul').append('<li>' + input + '<i class="fas fa-check fa-beat "></i><i class="fas fa-trash fa-beat"></i> </li>');
+                $(this).val('');
+            });
+            $('ul').on('click', '.fa-trash', function () {
+                $(this).parent('li').fadeOut(1000);
+            });
+            $('ul').on('click', '.fa-check', function () {
+                $(this).parent('li').toggleClass("checked");
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
